@@ -1,0 +1,40 @@
+from Memory import Memory
+
+data1 = Memory()
+data2 = Memory()
+
+#hardcode inputan
+data1.setprice(6000000)
+data1.setIdProduct("123Z321")
+data1.setbrand("klova")
+data1.setmodel("cute123")
+data1.setfrequency(10000)
+data1.setmemorySize(512)
+data1.setsupportsCuda(False)
+
+data2.setprice(12000000)
+data2.setIdProduct("101A101")
+data2.setbrand("MilkMocha")
+data2.setmodel("Brown404")
+data2.setfrequency(30000)
+data2.setmemorySize(1000)
+data2.setsupportsCuda(True)
+
+#output
+print("===========================================")
+print("Id           : " +str(data1.getIdProduct()))
+print("Price        : " +"Rp" +str(data1.getprice())  + ",-")
+print("Brand        : " +str(data1.getbrand()))
+print("Model        : " +str(data1.getmodel()))
+print("Frequency    : " +str(data1.getfrequency()) + " Hz")
+print("Memory Size  : " +str(data1.getmemorySize()) + " GB")
+print("Support CUDA : " +str(data1.getsupportsCuda()))
+print("===========================================")
+print("Id           : " +str(data2.getIdProduct()))
+print("Price        : " +"Rp" +str(data2.getprice()) + ",-")
+print("Brand        : " +str(data2.getbrand()))
+print("Model        : " +str(data2.getmodel()))
+print("Frequency    : " +str(data2.getfrequency()) + " Hz")
+print("Memory Size  : " +str(data2.getmemorySize()) + " GB")
+print("Support CUDA : " +str(data2.getsupportsCuda()))
+print("===========================================")
